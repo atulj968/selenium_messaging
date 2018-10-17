@@ -21,7 +21,7 @@ driver.get("https://www.linkedin.com/uas/login?")
 wait = WebDriverWait(driver, 600) 
   
 a = @driver.find_element(:xpath, '//*[@id="login-email"]').send_Keys('atulj968@gmail.com')
-a = @driver.find_element(:xpath, '//*[@id="login-password"]').send_Keys('atul@234917')
+a = @driver.find_element(:xpath, '//*[@id="login-password"]').send_Keys('***********')
 a = @driver.find_element(:xpath, '//*[@id="login-submit"]').click
 sleep 5
 a = @driver.find_element(:xpath, '//*[@id="messaging-tab-icon"]').click
