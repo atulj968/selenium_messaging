@@ -26,9 +26,12 @@ a = @driver.find_element(:xpath, '//*[@id="login-submit"]').click
 sleep 5
 a = @driver.find_element(:xpath, '//*[@id="messaging-tab-icon"]').click
 a = @driver.find_element(:xpath, '//*[@id="ember2679"]/span/li-icon/svg').click
-a = @driver.find_element(:xpath, '//*[@id="ember13950-search-field"]').send_eys('//*[@id="ember13950"]/ul/li[2]/span','//*[@id="ember13950"]/ul/li[1]/span')
-
+a = @driver.find_element(:xpath, '//*[@id="ember13950-search-field"]').send_Keys('//*[@id="ember13950"]/ul/li[2]/span','//*[@id="ember13950"]/ul/li[1]/span')
+sleep 5
+a = @driver.find_element(:xpath, '//*[@id="ember23891"]').send_Keys('Group name')
 sleep 2;p 'This is Where I clicked/initiated the Send Message '
 a = @driver.find_element(:xpath, '//*[@id="ember13956"]/div[1]/p')
 a.send_Keys('Hello Everyone,My name is Atul and this messege send using selenium driver') # This is where I entered the keys and Did Enter
+a.send_Keys:enter
+a = @driver.find_element(:xpath, '//*[@id="attachment-trigger-ember23563"]/li-icon/svg').click # This is where you choose a photo
 a.send_Keys:enter
